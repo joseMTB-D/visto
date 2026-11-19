@@ -1,0 +1,11 @@
+1- GitHub MCP
+2- Atlassian MCP
+3- Filesystem MCP
+4- Git MCP
+5- Fetch MCP
+6- Context7 MCP
+7- Database MCP
+8- Playwright
+9- Sequential Thinking
+10- Memory
+11- Docker
