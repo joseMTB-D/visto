@@ -13,9 +13,9 @@ public class EpisodeRequest {
 
     private String id;
 
-    private Integer numeroEpisodio;
+    private Integer episodeNumber;
 
-    private Time duracion;
+    private Time duration;
 
     private String video;
 

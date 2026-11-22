@@ -1,25 +1,25 @@
-CREATE TABLE IF NOT EXISTS anime (
+CREATE TABLE IF NOT EXISTS animes (
     ID varchar(255) primary key NOT NULL,
-    NOMBRE varchar(255) not null,
-    EPISODIO_ACTUAL int,
-    FINALIZADO boolean,
-    FECHA_INICIO date,
-    FECHA_FIN date,
-    NUMERO_EPISODIOS int,
-    NUMERO_REVISUALIZACIONES int,
-    FECHA_ESTRENO date,
-    FECHA_REGISTRO date,
-    NOTA double,
-    DESCRIPCION text
+    NAME varchar(255) not null,
+    CURRENT_EPISODE int,
+    FINISHED boolean,
+    START_DATE date,
+    END_DATE date,
+    NUMBER_OF_EPISODES int,
+    NUMBER_OF_VIEWINGS int,
+    RELEASE_DATE date,
+    REGISTRATION_DATE date,
+    RATING double,
+    DESCRIPTION text
 );
 
-CREATE TABLE IF NOT EXISTS episodio (
+CREATE TABLE IF NOT EXISTS episode (
     ANIME_ID varchar(255),
-    FOREIGN KEY (ANIME_ID) REFERENCES anime(ID),
+    FOREIGN KEY (ANIME_ID) REFERENCES animes(ID),
     ID varchar(255) primary key NOT NULL,
-    NUMERO_EPISODIO int,
-    DURACION time,
-    video text
+    EPISODE_NUMBER int,
+    DURATION time,
+    VIDEO text
 );
 
 CREATE TABLE IF NOT EXISTS usuarios (

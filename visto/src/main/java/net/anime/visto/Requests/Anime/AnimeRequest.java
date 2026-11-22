@@ -10,26 +10,26 @@ public class AnimeRequest {
 
     private String id;
 
-    private String nombre;
+    private String name;
 
-    private Integer episodioActual;
+    private Integer currentEpisode;
 
-    private Boolean finalizado;
+    private Boolean finished;
 
-    private Date fechaInicio;
+    private Date startDate;
 
-    private Date fechaFin;
+    private Date endDate;
 
-    private Integer numeroEpisodios;
+    private Integer numberOfEpisodes;
 
-    private Integer numeroRevisualizaciones;
+    private Integer numberOfViewings;
 
-    private Date fechaEstreno;
+    private Date releaseDate;
 
-    private Date fechaRegistro;
+    private Date registrationDate;
 
-    private Double nota;
+    private Double rating;
 
-    private String descripcion;
+    private String description;
 }
 

@@ -4,14 +4,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import org.springframework.validation.annotation.Validated;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Table(name = "usuarios")
+@Table(name = "users")
 public class user {
 
     @Id

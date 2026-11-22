@@ -12,18 +12,18 @@ import java.sql.Time;
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "episodio")
-public class Episodio {
+@Table(name = "episode")
+public class Episode {
 
     String animeId;
 
     @Id
     String id;
 
-    Integer numeroEpisodio;
+    Integer episodeNumber;
 
     @Timespan
-    Time duracion;
+    Time duration;
 
     String video;
 

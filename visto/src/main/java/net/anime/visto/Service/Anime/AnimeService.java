@@ -1,7 +1,7 @@
 package net.anime.visto.Service.Anime;
 
 import net.anime.visto.Models.Service.Anime.Anime;
-import net.anime.visto.Models.Service.Anime.Episodio;
+import net.anime.visto.Models.Service.Anime.Episode;
 
 public interface AnimeService {
 
@@ -9,13 +9,13 @@ public interface AnimeService {
     //TODO Crear en su propia interfaz de seguridad
     //public String login();
 
-    public String addAnime(Anime anime);
-    public String updateAnime(Anime anime);
-    public String deleteAnime(Anime anime);
+    String addAnime(Anime anime);
+    String updateAnime(Anime anime);
+    String deleteAnime(Anime anime);
 
-    public String addEpisode(Episodio episodio, String animeName);
-    public String updateEpisode(Episodio episodio);
-    public String deleteEpisode(Episodio episodio);
+    String addEpisode(Episode episode, String animeName);
+    String updateEpisode(Episode episode);
+    String deleteEpisode(Episode episode);
 
 }
 

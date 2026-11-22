@@ -8,43 +8,43 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
-import java.util.List;
 import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "anime")
+@Table(name = "animes")
 public class Anime {
 
     @Id
+
     String id = UUID.randomUUID().toString();
 
-    String nombre;
+    String name;
 
-    Integer episodioActual;
+    Integer currentEpisode;
 
-    Boolean finalizado;
-
-    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
-    Date fechaInicio;
+    Boolean finished;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
-    Date fechaFin;
-
-    Integer numeroEpisodios;
-
-    Integer numeroRevisualizaciones;
+    Date startDate;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
-    Date fechaEstreno;
+    Date endDate;
+
+    Integer numberOfEpisodes;
+
+    Integer numberOfViewings;
 
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
-    Date fechaRegistro;
+    Date releaseDate;
 
-    Double nota;
+    @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
+    Date registrationDate;
 
-    String descripcion;
+    Double rating;
+
+    String description;
 
 }

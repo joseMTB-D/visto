@@ -1,7 +1,6 @@
 package net.anime.visto.Controller;
 
 import org.apache.coyote.Response;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -9,37 +8,35 @@ import org.springframework.web.bind.annotation.*;
 public class apiController {
 
 
-    @PostMapping("/añadirAnime")
-    public Response nuevoAnime(
+    @PostMapping("/addAnime")
+    public Response nuevoAnime() {
+        Response response = new Response();
 
-    ) {
+        return response;
+    }
 
-
+    @PutMapping("/updateAnime")
+    public String updateAnime() {
         return "¡helloWord!";
     }
 
-    @PutMapping("/modificarAnime")
-    public String añadirAnime() {
+    @DeleteMapping("/deleteAnime")
+    public String deleteAnime() {
         return "¡helloWord!";
     }
 
-    @DeleteMapping("/eliminarAnime")
-    public String eliminarAnime() {
+    @PostMapping("/addEpisode")
+    public String addEpisode() {
         return "¡helloWord!";
     }
 
-    @PostMapping("/añadirEpisodio")
-    public String añadirEpisodio() {
+    @PutMapping("/updateEpisode")
+    public String updateEpisode() {
         return "¡helloWord!";
     }
 
-    @PutMapping("/añadirEpisodio")
-    public String modificarEpisodio() {
-        return "¡helloWord!";
-    }
-
-    @DeleteMapping("/eliminarEpisodio")
-    public String eliminarEpisodio() {
+    @DeleteMapping("/deleteEpisode")
+    public String deleteEpisode() {
         return "¡helloWord!";
     }
 }
